@@ -1,0 +1,42 @@
+// ========================================
+// hotspot
+// ========================================
+
+// .hotspot {
+// 	position: absolute;
+// 	background-color: rgba($white, 0.3);
+// 	top: 0;
+// 	border-radius: 100%;
+// 	padding: 10px;
+// 	border: 1px solid black;
+// 	width: 20px;
+// 	height: 20px;
+// 	text-align: center;
+// 	&:before {
+// 		content: "";
+// 		position: absolute;
+// 		width: 25px;
+// 		height: 25px;
+// 		background-color: rgba($white, 0.3);
+// 		top: -2px;
+// 		left: -3px;
+// 		border-radius: 100%;
+// 	}
+// 	span {
+// 		@include prefix( transform, translateX(-6px) );
+// 		line-height: 2px;
+// 		display: block;
+// 	}
+// }
+
+.hotspot {
+	display: block;
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	background: url(/assets/img/hotspot.png) 0 0 / cover;
+	@include breakpoint(mini-mobile) {
+		width: 28px;
+		height: 28px;
+	}
+}

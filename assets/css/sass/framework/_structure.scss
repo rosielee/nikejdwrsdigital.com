@@ -1,0 +1,38 @@
+// ========================================
+// base
+// ========================================
+
+.container {
+	position: relative;
+	// width: 996px;
+	width: 1280px;
+	margin: 0 auto;
+	@include breakpoint(mini-mobile) {
+		width: 100%;
+	}
+}
+
+.amm {
+	width: 100%;
+}
+
+img {
+	// max-width: 100%;
+}
+
+// ========================================
+// this
+// ========================================
+
+.desktop {
+	@include breakpoint(mini-mobile) {
+	    display: none;
+	}
+}
+
+.mobile {
+	display: none;
+	@include breakpoint(mini-mobile) {
+	    display: block;
+	}
+}

@@ -1,0 +1,77 @@
+// ========================================
+// carousel
+// ========================================
+
+.slides {
+	position: relative;
+	width: 400%;
+	transition: 600ms;
+	&.first {
+		left: 0%;
+	}
+	&.second {
+		left: -100%;
+	}
+	&.third {
+		left: -200%;
+	}
+	&.fourth {
+		left: -300%;
+	}
+}
+
+.slide {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	width: 25%;
+	&:nth-child(1) {
+		left: 0;
+	}
+	&:nth-child(2) {
+		left: 25%;
+	}
+	&:nth-child(3) {
+		left: 50%;
+	}
+	&:nth-child(4) {
+		left: 75%;
+	}
+}
+
+.control {
+	@extend .v-list;
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	z-index: 1;
+	margin-left: -15px;
+	@include prefix( transform, translateY(-50%) );
+	a {
+		display: block;
+		width: 8px;
+		height: 8px;
+		margin-bottom: 5px;
+		border-radius: 100%;
+		background-color: $black;
+		&.active, &:hover {
+			background-color: $peach;
+		}
+	}
+}
+
+// ========================================
+// make white text container fit screen
+// ========================================
+
+.slide {
+	& > div {
+		height: 100%;
+	}
+	.grid {
+		height: 100%;
+	}
+	.unit {
+		height: calc( 100% - 60px );
+	}
+}

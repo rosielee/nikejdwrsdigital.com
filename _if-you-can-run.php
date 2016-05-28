@@ -1,0 +1,2 @@
+<!-- <figure class="h_m" style="background-image: url(/assets/img/bg-if-you-can-run-you-can-race.jpg); background-size: contain; background-repeat: no-repeat; background-color: #BBFFDC; background-position: 50%;"></figure> -->
+<img src="/assets/img/bg-if-you-can-run-you-can-race.jpg" style="max-width: 100%;">

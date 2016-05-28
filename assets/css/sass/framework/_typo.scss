@@ -1,0 +1,134 @@
+html {
+	font-family: "trade-gothic-lt-bold-cond-twenty";
+}
+
+body {
+	letter-spacing: 0.02em;
+}
+
+p {
+	letter-spacing: 0.06em;
+}
+
+// ========================================
+// fonts style
+// ========================================
+
+.typo-uppercase {
+	text-transform: uppercase;
+}
+
+// ========================================
+// font weight
+// ========================================
+
+.typo-normal {
+	font-weight: normal;
+}
+
+.typo-bold {
+	font-weight: normal;
+}
+
+// ========================================
+// alignment
+// ========================================
+
+.typo-left {
+	text-align: left;
+}
+
+.typo-right {
+	text-align: right;
+}
+
+.typo-center {
+	text-align: center;
+}
+
+.typo-justify {
+	text-align: justify;
+}
+
+// ========================================
+// sizes
+// ========================================
+
+.f_xl {
+	@include fontSize( 60px );
+	@include lineHeight( 60px );
+	@include breakpoint(mini-mobile) {
+		@include fontSize( 50px );
+		@include lineHeight( 50px );
+	}
+}
+
+.f_l {
+	@include fontSize( 30px );
+	@include lineHeight( 30px );
+	@include breakpoint(mini-mobile) {
+		@include fontSize( 22px );
+		@include lineHeight( 22px );
+	}
+}
+
+.f_m {
+	@include fontSize( 20px );
+	@include lineHeight( 20px );
+	@include breakpoint(mini-mobile) {
+		@include fontSize( 18px );
+		@include lineHeight( 18px );
+	}
+}
+
+.f_r {
+	@include fontSize( 13px );
+	@include lineHeight( 17px );
+	// @include breakpoint(mini-mobile) {
+	// 	@include fontSize( 14px );
+	// 	@include lineHeight( 22px );
+	// }
+}
+
+.f_s {
+	// @include fontSize( 13px );
+	// @include lineHeight( 17px );
+}
+
+// ===========================================================
+// colours
+// ===========================================================
+
+.typo-white {
+	color: $white;
+}
+
+.typo-lime {
+	color: $lime;
+}
+
+.typo-peach {
+	color: $peach;
+}
+
+.typo-aqua {
+	color: $aqua;
+}
+
+// ========================================
+// sup
+// ========================================
+
+sup:after {
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 2px;
+	background-color: white;
+	left: 0;
+	top: 11px;
+	@include breakpoint(mini-mobile) {
+	    width: 13px;
+	    height: 1px;
+	}
+}

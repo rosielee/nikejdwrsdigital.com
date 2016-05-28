@@ -1,0 +1,11 @@
+.banner-free {
+	p {
+		margin: 0 0 40px 75px;
+		@include breakpoint(mini-mobile) {
+		    display: none;
+		}
+	}
+	@include breakpoint(mini-mobile) {
+	    background-position: 0 50%;
+	}
+}

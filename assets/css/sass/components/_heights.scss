@@ -1,0 +1,49 @@
+// ========================================
+// mobile
+// ========================================
+
+// $block_height : 660px;
+
+// .h_xl {
+// 	height: $block_height;
+// }
+
+// .h_l {
+// 	height: $block_height * 0.75;
+// }
+
+// .h_m {
+// 	height: $block_height / 1.5;
+// }
+
+// .h_s {
+// 	height: $block_height / 3;
+// }
+
+// ========================================
+// desktop
+// ========================================
+
+$block_height : 512px;
+
+.h_l, .h_m {
+	background-size: cover;
+	// to prevent stripes overlapping images
+	// position: relative;
+	// z-index: 1;
+}
+
+.h_l {
+	height: $block_height;
+}
+
+.h_m {
+	height: $block_height / 2;
+	// @include breakpoint(mobile) {
+	// 	height: $block_height / 4;
+	// }
+}
+
+.h_s {
+	height: $block_height / 4;
+}

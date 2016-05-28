@@ -1,0 +1,17 @@
+.stripes-up,
+.stripes-left {
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+.stripes-up {
+	width: 100%;
+}
+
+.stripes p {
+	@extend .f_xl;
+	@include breakpoint(mobile) {
+		@include fontSize( 35px );
+		@include lineHeight( 35px );
+	}
+}

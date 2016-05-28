@@ -1,0 +1,93 @@
+// ========================================
+// hero
+// ========================================
+
+// background
+
+.hero {
+	@include breakpoint(mini-mobile) {
+		background: url(/assets/img/bg-stripes-bluegreen-vert-01.jpg) 50% 0% / 150% no-repeat;
+	}
+	.stripes-up {
+		@include breakpoint(mini-mobile) {
+		    display: none;
+		}
+	}
+}
+
+.hero {
+	overflow: hidden;
+	position: relative;
+	height: 512px;
+	@include breakpoint(mini-mobile) {
+		@include fontSize( 18px );
+		@include lineHeight( 24px );
+	}
+	@include breakpoint(mini-mobile) {
+		height: inherit;
+		padding-bottom: 20px;
+	}
+}
+
+.hero-logo {
+	display: none;
+	position: absolute;
+	@include prefix( transform, translateY(-100%) );
+	padding: 0 0 40px 40px;
+	top: 512px;
+	img {
+		@include breakpoint(mini-mobile) {
+			height: 140px;
+		}
+	}
+	@include breakpoint(mini-mobile) {
+		display: block;
+		position: static;
+		@include prefix( transform, translateY(0) );
+		padding: 0;
+	}
+}
+
+.hero-text {
+	height: 512px;
+	@include breakpoint(mini-mobile) {
+		height: inherit;
+	}
+}
+
+.hero-text-inner {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	@include prefix( transform, translate(-50%, -50%) );
+	h1 {
+		margin-bottom: 20px;
+		@include breakpoint(mini-mobile) {
+			@include fontSize( 35px );
+			@include lineHeight( 35px );
+		}
+	}
+	p {
+		@include breakpoint(mini-mobile) {
+			@include fontSize( 18px );
+			@include lineHeight( 18px );
+			margin-bottom: 10px;
+			padding: 0 10px;
+		}
+	}
+	@include breakpoint(mini-mobile) {
+		position: static;
+		width: 100%;
+		margin-top: 30px;
+		@include prefix( transform, translate(0, 0) );
+	}
+}
+
+.hero-btn {
+	margin-top: 50px;
+	@include breakpoint(mini-mobile) {
+	    margin-top: 15px;
+	    margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,21 @@
+// ========================================
+// profile
+// ========================================
+
+.profile-hannah {
+	@include breakpoint(mobile) {
+		background-position: 20% 0;
+	}
+}
+
+.profile-inna {
+	@include breakpoint(mobile) {
+		background-position: 40% 0;
+	}
+}
+
+.profile-polly {
+	@include breakpoint(mobile) {
+		background-position: 40% 0;
+	}
+}

@@ -1,0 +1,9 @@
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: $white;
+	background-color: $black;
+	padding: 10px 15px;
+	@extend .f_r;
+	@extend .typo-bold;
+}
